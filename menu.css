@@ -1,0 +1,128 @@
+/* this page is written by Nimrah */
+
+*{
+	box-sizing: border-box;
+	font-family: 'Nerko One', cursive;
+	font-size: 20px;
+	color: black;
+	padding: 4px;
+}
+
+body {
+	margin: 0 auto;
+	background-color: pink !important;
+	padding: 3px;
+}
+
+.header{
+	text-align: center;
+	background-color: lightblue;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 40px;
+	text-shadow: 2px 2px 5px blue;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+}
+p{
+	font-family: 'Roboto', sans-serif;
+}
+sm{
+	font-family: 'Poppins', sans-serif;
+	font-size:17px;
+	font-weight:none;
+	font-style:none;
+}
+
+.cafe{
+	text-align:center;
+	margin-bottom:5px;
+}
+.cafe h4{
+	text-transform:capitalize;
+	font-size:40px;
+	position:relative;
+	display:inline-block;
+	padding-bottom:2px;
+}
+.cafe h4 span{
+	display:block;
+	font-size:25px;
+	font-style:italic;
+	margin-bottom:2px;
+}
+.cafe h4:before{
+	position:absolute;
+	content:"";
+	width:70px;
+	left:50%;
+	transform:translateX(-50%);
+}
+
+.header img{
+	width:22%;
+}
+
+img{
+	width:40%;
+}
+
+.row{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+.col-md-6{
+	flex-basis:500px;
+	margin-bottom:15px;
+	padding-bottom:15px;
+	border-bottom:2px solid hotpink;
+}
+
+.col-md-6{
+	display:flex;
+	flex-direction:row;
+	align-items:center;
+}
+.col-md-6:hover img{
+	border-radius:0%;
+}
+.col-md-6 img{
+	margin-right:20px;
+	border-radius:50%;
+	border:2px solid hotpink;
+	padding:1px;
+	transition:.7s;
+}
+.col-md-6 h4{
+	font-size:26px;
+	border-bottom:2px dashed brown;
+	font-family: arial;
+	font-weight:bold;
+	font-style:italic;
+}
+
+.col-md-6 h4 span{
+	float: right;
+	color: red;
+	font-family: times new roman;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/*footer*/
+footer{
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 30px;
+	font-family: 'Sansita Swashed', cursive;
+	text-shadow: 2px 2px 5px yellow;
+	background-color: white !important;
+}
+button{
+	background-color: yellow;
+	font-family: calibri;
+}

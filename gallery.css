@@ -1,0 +1,155 @@
+/* This page is written by Nimrah */
+
+*{
+	box-sizing: border-box;
+	font-family: 'Nerko One', cursive;
+	font-size: 20px;
+	color: black;
+	padding: 4px;
+}
+
+body {
+	margin: 0 auto;
+	background-color: pink !important;
+	padding: 3px;
+}
+/*CSS for header */
+.header{
+	text-align: center;
+	background-color: lightblue;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 40px;
+	text-shadow: 2px 2px 5px blue;
+}
+
+p{
+	font-family: 'Roboto', sans-serif;
+}
+h3{
+	text-align:center;
+	font-family:arial;
+	font-weight:bold;
+}
+/*images in the Gallery page*/
+/*include style for the images and gif and onclick javascript included*/
+
+.col-md-3 img{
+	width: 250px;
+	float: left;
+	padding: 2px;
+	border-radius: 2px;
+	opacity: 1; 
+	cursor: pointer; 
+	text-align: center;	
+
+
+}
+.col-md-2 img{
+	width: 250px;
+	float: left;
+	padding: 2px;
+	border-radius: 2px;
+	opacity: 1; 
+	cursor: pointer; 
+	text-align: center;	
+
+}
+
+/*gif in the Gallery Page*/
+.col-md-6{
+	float: left;
+	width: 60%;
+	padding: 2px;
+	border-radius: 2px;
+	opacity: 1; 
+	cursor: pointer;
+	text-align: center;	
+}
+
+
+/* Clear floats after the columns */
+.gallery:after {
+	content: "";
+	display: table;
+	clear: both;
+	width: 30%;
+}
+
+/* The coffee image container */
+
+/* coffee image text */
+#imgtext {
+	position: absolute;
+	bottom: 20px;
+	text-align: center;
+	color: pink;
+	font-size: 0px;
+}
+
+
+/* Closable button inside the coffee image */
+.closebtn {
+	position: relative;
+	text-align:right;
+	top: 2px;
+	right: 5px;
+	color: black;
+	font-size: 60px;
+	cursor: pointer;
+}
+
+/*image button*/
+.button {
+	background-color: #4CAF50;
+	border: none;
+	color: white;
+	padding: 5px 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 2px 1px;
+	cursor: pointer;
+}
+/*footer*/
+footer{
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 30px;
+	font-family: 'Sansita Swashed', cursive;
+	text-shadow: 2px 2px 5px yellow;
+	background-color: white !important;
+}
+/*Gallery page CSS Done*/
+
+
+
+
+/*MINI Game page styling*/
+/* Made by Nimrah*/
+
+/*swap button*/
+button{
+	color: blue;
+	font-family: times new roman;
+	font-weight: bold;
+}
+
+/*Game button*/
+input{
+	color:blue;
+	font-family: times new roman;
+	font-weight: bold;
+}
+.game{
+	text-align: center;
+}
+/*styling for the result */
+#feedback{
+	background-color: red;
+	color: yellow;
+	font-family: robboto;
+	font-weight: bold;
+}

@@ -1,0 +1,27 @@
+*{
+	box-sizing: border-box;
+	font-family: 'Lucida Console', cursive;
+	font-size: 20px;
+	color: black;
+	padding: 3px;
+}
+
+body {
+	margin: 0 auto;
+	background-color: pink !important;
+}
+	
+
+
+.header{
+	text-align: center;
+	font-weight: bold;
+	font-style: Lucida Console;
+	font-size: 40px;
+	text-indent: 50px;
+	text-shadow: 2px 2px 5px blue;
+	background-color: lightblue;
+}
+.col-md-4 { 
+	padding: 1px;
+}

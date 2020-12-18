@@ -1,0 +1,165 @@
+<!-- this page written by Nimrah -->
+
+<!--5 essential tag-->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!--meta tags-->
+		<meta charset="UTF-8">
+		<meta name="description" content="Description of the webpage">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		
+		<!--bootstrap links-->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		
+		<!--google fonts-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sansita+Swashed:wght@600&display=swap" rel="stylesheet">
+
+		<!--link to stylesheet -->
+		<link rel="stylesheet" type="text/css" href="gallery.css" >
+		
+		<!--title and icon-->
+		<title>Coffee Website</title>
+		<link rel = "icon" href =  "logo.jpg" type = "image/x-icon">
+		
+		<!--font awesome Icon-->
+		<script src="https://kit.fontawesome.com/577edf4eaf.js" crossorigin="anonymous"></script>
+		
+		<!--Onclick JavaScript for the image-->
+		<script>
+		function myGallery(imgs) {
+		  var coffeeImg = document.getElementById("coffeeImage");
+		  var imgText = document.getElementById("imgtext");
+		  coffeeImg.src = imgs.src;
+		  imgText.innerHTML = imgs.alt;
+		  coffeeImg.parentElement.style.display = "block";
+		}
+		</script>
+
+	</head>
+	<body> 
+	
+		<!--bootstrap Navigation Bar-->
+		<!--source for the code  https://getbootstrap.com/  -->
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light et-custom-nav-colour">
+			<a class="navbar-brand" href="#">Navbar</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<!--5-6 page included in the website-->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+					<!--Homepage done by Daniel-->
+						<a class="nav-link" href="index.html"><i class="fas fa-house-user"></i>Home</a>
+					</li>
+					<!--contact Us page done by Daniel-->
+					<li class="nav-item active">
+						<a class="nav-link" href="index1.html"><i class="fas fa-phone-volume"></i>Contact Us</a>
+					</li>
+					<li class="nav-item active">
+					<!--gallery page is done by Nimrah-->
+						<a class="nav-link" href="gallery.html"><i class="fas fa-images"></i>Gallery</a>
+					</li>
+					<li class="nav-item active">
+					<!--Menu page is done by Nimrah-->
+						<a class="nav-link" href="menu.html"><i class="fas fa-mug-hot"></i>Menu </a>
+					</li>
+					<li class="nav-item active">
+					<!--game page is done by Nimrah-->
+						<a class="nav-link" href="game.html"><i class="fas fa-chess-board"></i>Mini Game </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#"><i class="fas fa-info-circle"></i>About Us </a>
+					</li>	  
+				</ul>
+			</div>
+		</nav>
+		
+		<!--website logo and website name-->
+		<div class="header">
+			<h1> DIN CAFE </h1>
+			<img src="logo.png" alt="logo of the website"  >
+		</div>
+		
+		<br />
+		<!--heading and paragraph of the Gallery page-->
+		<div style="text-align:center">
+			<h2> Image Gallery</h2>
+			<p>Click on the images to see a bigger image viewo on the same page  </p>
+			<p>Click on the gif to see a seperate view on the same page and also on the next tab</p>
+		</div>
+		
+		<br />
+		<!--images and gif-->
+		<!--source for the code of the idea, I changed it to bootstrap, row, and column and add some class name  https://www.w3schools.com/howto/howto_js_tab_img_gallery.asp  -->
+		
+		<div class="container">
+			<!--2 gif of coffee-->
+			<!--click on the gif to see a seperate view on seperate tab and also on the same page-->
+			<!--Onclick Javascript included in the images and GIF-->
+			<h3>GIF</h3>
+			
+			<!--Using rows and columns for the images and Gif-->
+			<!--I used col-md-6 for 2 gif-->
+			<div class="row">
+				<div class="col-md-6">
+			<!--All the images are taken from the google https://www.google.com/search?q=coffee+images&sxsrf=ALeKk031MOxfO6CON_OMiUod2XjyE3Un1Q:1608248999689&source=lnms&tbm=isch&sa=X&ved=2ahUKEwj1ydiymtbtAhVAShUIHVopBy8Q_AUoAXoECCAQAw&biw=1366&bih=657-->
+					<a target="_blank" href="coffee.gif">
+						<img src="coffee.gif" alt="Coffee gif" onclick="myGallery(this);">
+					</a>
+				</div>
+				<div class="col-md-6">
+					<a target="_blank" href="coffee-animated.gif">
+						<img src="coffee-animated.gif" alt="Coffee gif" onclick="myGallery(this);">
+					</a>
+				</div>
+			</div>
+			<br />
+			
+			<!--I used col-md-3 and col-md-2 for the 5 images-->
+			<h3>IMAGES</h3>
+			<div class="row">
+				<div class="col-md-3">
+					<img src="image3.jpg" alt="image" onclick="myGallery(this);">
+				</div>			
+				<div class="col-md-2">
+					<img src="image2.jpg" alt="image" onclick="myGallery(this);">
+				</div>	
+				<div class="col-md-2">
+					<img src="image1.jpg" alt="image" onclick="myGallery(this);">
+				</div>
+				<div class="col-md-2">
+					<img src="image5.jpg" alt="image" onclick="myGallery(this);">
+				</div>
+				<div class="col-md-3">
+					<img src="image4.jpg" alt="image" onclick="myGallery(this);">
+				</div>
+							
+			</div>	
+		</div>
+		<!--End Main Content-->
+		
+		<br />
+		<!--button for the image to see a bigger image -->
+		<div class="container">
+			<span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+			<img src="#" id="coffeeImage" style="width:80%" >
+			<div id="imgtext"></div>
+		</div>
+		
+		<br />
+		<!--footer, Name included their-->
+		<footer class="containertext-center">
+			<h4>&copy; Nimrah Memon </h4>		
+		</footer>
+		<br />
+		
+	</body>
+</html>
